@@ -1,0 +1,134 @@
+h1{
+    text-align: center;
+}
+
+#frmClient{
+    width:80%;
+}
+
+#chat-container{
+    height:70vh;
+}
+
+#div-msg{
+    text-align: right;
+    line-height: 50px;
+}
+
+#spn-emoji, #spn-emoji *, #spn-send{
+    cursor: pointer;
+}
+
+#spn-emoji:hover,#spn-send:hover, #div-camera:hover{
+    background-color:#cccccc;
+}
+
+#div-emoji-container{
+    -webkit-box-shadow: 1px 1px 2px 2px #B5AAA5;
+    box-shadow: 1px 1px 2px 2px #B5AAA5;
+    position: absolute;
+    padding:5px;
+    display: none;
+}
+
+#div-emoji-container .emoji{
+    display:inline-block;
+    width:50px;
+    height:50px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 4px;
+}
+
+#div-emoji-container .emoji>i{
+    font-size:20px;
+}
+
+#div-emoji-container .emoji:hover{
+    background-color:#cccccc;
+}
+
+#txtMessage{
+    width:100%;
+    font-size: 14px;
+    padding:0px 5px;
+    color: #555;
+    padding:15px;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    min-height: 50px;
+    max-height: 90px;
+    overflow-y: scroll;
+}
+
+#txtMessage img{
+    transition-property: all;
+    transition-duration: 100ms;
+    margin:0px 2px;
+}
+
+#txtMessage:focus{
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);    
+}
+
+#spn-send{
+    top:initial;
+    background-image:url('../_images/send-icon.png');
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#div-camera{
+    width:46px;
+    text-align:center;
+    font-size:18px;
+    cursor:pointer;
+    padding:3px 0px;
+    border-radius:0px 0px 4px 4px;
+}
+
+#div-camera-container{
+    display:none;
+    position: absolute;
+    width:325px;
+    height:290px;
+    -webkit-box-shadow: 1px 1px 2px 2px #B5AAA5;
+    box-shadow: 1px 1px 2px 2px #B5AAA5;    
+}
+
+#div-camera-container video{
+    width:100%;
+}
+
+#btnSnap{
+    vertical-align: top;
+    margin-left:5px;
+}
+
+#file-uploading-loader{
+    display:inline-block;
+    background-image:url('../_images/loader.gif');
+    background-size:105px 85px;
+    background-position:center center;
+    width:35px;
+    height:35px;
+    padding-left:40px;
+    line-height:35px;
+    visibility:hidden;
+}
+
+@media all and (max-width:970px){
+    #div-msg{
+        text-align: left;
+    }
+    #frmClient{
+        width:100%;
+    }
+}

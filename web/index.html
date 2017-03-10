@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Public Chat</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="_css/bootstrap.css">
+        <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="_css/styles.css">
+    </head>
+    <body>
+        <h1>Welcome to IJSE Public Chat Application</h1>
+        <div id="chat-container" class="container">
+
+        </div>
+        <form id="frmClient" class="container">
+            <div id="div-row" class="row">
+                <div class="col-md-3" id="div-msg">
+                    Enter your message here
+                </div>
+                <div class="col-md-9">
+                    <div class="input-group">
+                        <span title="Pick emoji" id="spn-emoji" class="input-group-addon"><i class="em em-grinning"></i></span>
+                        <div id="txtMessage" contenteditable="true">                        
+                        </div>
+                        <span title="Send message" id="spn-send" class="input-group-addon">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    </div>
+                    <div title="Open camera" id="div-camera"><span class="glyphicon glyphicon-camera" aria-hidden="true"></span></div>
+                </div>
+            </div>
+        </form>
+
+        <div id="div-camera-container">
+            <video id="video" autoplay></video> 
+            <button id="btnSnap" type="button" class="btn btn-primary">Snap & Send</button>
+            <div id="file-uploading-loader">Uploading...</div>
+        </div>
+        <div id="div-emoji-container">
+            <div>
+                <span class="emoji"><i class="em em-angry"></i></span>
+                <span class="emoji"><i class="em em-anguished"></i></span>
+                <span class="emoji"><i class="em em-astonished"></i></span>
+                <span class="emoji"><i class="em em-blush"></i></span>
+                <span class="emoji"><i class="em em-bowtie"></i></span>
+            </div>
+            <div>
+                <span class="emoji"><i class="em em-confused"></i></span>
+                <span class="emoji"><i class="em em-confounded"></i></span>
+                <span class="emoji"><i class="em em-cold_sweat"></i></span>
+                <span class="emoji"><i class="em em-cry"></i></span>
+                <span class="emoji"><i class="em em-disappointed"></i></span>
+            </div>
+            <div>
+                <span class="emoji"><i class="em em-dizzy_face"></i></span>
+                <span class="emoji"><i class="em em-disappointed_relieved"></i></span>
+                <span class="emoji"><i class="em em-expressionless"></i></span>
+                <span class="emoji"><i class="em em-fearful"></i></span>
+                <span class="emoji"><i class="em em-flushed"></i></span>
+            </div>
+            <div>
+                <span class="emoji"><i class="em em-frowning"></i></span>
+                <span class="emoji"><i class="em em-grimacing"></i></span>
+                <span class="emoji"><i class="em em-grinning"></i></span>
+                <span class="emoji"><i class="em em-grin"></i></span>
+                <span class="emoji"><i class="em em-heart_eyes"></i></span>
+            </div>                
+        </div>        
+        <script type="text/javascript" src="_js/jquery.js"></script>
+        <script type="text/javascript" src="_js/controllers/chatController.js"></script>
+    </body>
+</html>
